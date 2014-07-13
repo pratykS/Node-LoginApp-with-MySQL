@@ -3,8 +3,8 @@
     "version": "0.0.2",
     "private": true,
     "dependencies": {
-        "express": "3.x",
-        "ejs": ">= 0.0.1",
+        "express": "~3.4.4",
+        "ejs": "~0.8.5",
         "node-schedule": "latest",
         "node-uuid": "latest",
         "crypto": "latest",
