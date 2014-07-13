@@ -8,8 +8,6 @@
         "node-schedule": "latest",
         "node-uuid": "latest",
         "crypto": "latest",
-        "connect-flash": "~0.1.1",
-        "passport": "~0.1.17",
         "mysql": "latest"
     }
 }
