@@ -8,11 +8,6 @@ var express = require('express'),
   mysql = require('mysql'),
   fs = require('fs');
 
-var passport = require('passport');
-var flash = require('connect-flash');
-
-
-
 // Database
 
 var pool = mysql.createPool({
@@ -74,9 +69,7 @@ app.get('/', function (req, res) {
 app.post('/login', api.userLogin(pool));
 
 app.get('/login', function (req, res) {
-  res.render('login.ejs', {
-    message: req.flash('loginMessage')
-  });
+  res.render('login.ejs');
 });
 
 app.get('/api/users', checkAuth, api.users(pool));
